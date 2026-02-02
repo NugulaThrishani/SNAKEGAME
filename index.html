@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 Snake Game</h1>
+        </header>
+        
+        <div class="game-info">
+            <div class="score-container">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="highScore">0</span></span>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        
+        <div class="direction-pad">
+            <div class="d-pad-row">
+                <button id="upBtn" class="direction-btn">↑</button>
+            </div>
+            <div class="d-pad-row">
+                <button id="leftBtn" class="direction-btn">←</button>
+                <button id="downBtn" class="direction-btn">↓</button>
+                <button id="rightBtn" class="direction-btn">→</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <p>Use arrow keys (↑ ↓ ← →) or WASD to control the snake</p>
+            <p>Eat the red food to grow and earn points</p>
+            <p>Don't hit the walls or yourself!</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Snake Game</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
